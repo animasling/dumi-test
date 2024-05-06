@@ -1,0 +1,30 @@
+{
+  "name": "comtest",
+  "version": "0.0.1",
+  "description": "> TODO: description",
+  "author": "longling.Tian <animas@126.com>",
+  "homepage": "https://github.com/animasling/dumi-test#readme",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/animasling/dumi-test.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/comTest.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/animasling/dumi-test/issues"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  },
+  "gitHead": "f8e35dd25b526ba2c97aab968f50024b93ec70f2"
+}

@@ -5,12 +5,12 @@
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "start": "dumi dev", 
-    "docs:build": "dumi build", 
-    "docs:deploy": "gh-pages -d docs-dist -r git@github.com:animasling/dumi-test.git", 
-    "build": "father build", 
-    "deploy": "npm run docs:build && npm run docs:deploy", 
-    "release": "npm run build && npx lerna publish from-package", 
+    "start": "dumi dev",
+    "docs:build": "dumi build",
+    "docs:deploy": "gh-pages -d docs-dist -r git@github.com:animasling/dumi-test.git",
+    "build": "father build",
+    "deploy": "npm run docs:build && npm run docs:deploy",
+    "release": "npm run build && npx lerna publish from-package",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
     "docs:preview": "dumi preview",
     "prepare": "husky install && dumi setup",
@@ -60,9 +60,11 @@
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "@umijs/lint": "^4.0.0",
+    "babel-plugin-import": "^1.13.8",
+    "babel-plugin-version": "^0.2.3",
     "dumi": "^2.3.0",
     "eslint": "^8.23.0",
-    "father": "^4.1.0",
+    "father": "^4.4.0",
     "gh-pages": "^6.1.1",
     "husky": "^8.0.1",
     "lerna": "^8.1.2",
@@ -74,5 +76,7 @@
     "react-dom": "^18.0.0",
     "stylelint": "^14.9.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "antd": "^5.17.0"
+  }
 }

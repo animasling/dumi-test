@@ -4,5 +4,11 @@
   "packages": [
     "packages/*"
   ],
+  "command": {
+    "init": {
+      "exact": true
+    }
+  },
+  "exact": true,
   "npmClient": "yarn"
 }

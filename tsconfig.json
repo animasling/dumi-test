@@ -4,13 +4,20 @@
     "declaration": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "sourceMap": true,
     "jsx": "react",
     "baseUrl": "./",
     "paths": {
       "@@/*": [".dumi/tmp/*"],
-      "dumi-test": ["package"],
-      "dumi-test/*": ["package/*", "*"]
-    }
+      "dumi-test": ["packages/comTest/src"],
+      "dumi-test/*": ["packages/comTest/src/*", "*"]
+    },
+    "allowSyntheticDefaultImports": true,
+    "typeRoots": ["./typings"]
   },
-  "include": [".dumirc.ts", "package/**/*"]
+  "include": [".dumirc.ts", "packages/**/*"]
 }
